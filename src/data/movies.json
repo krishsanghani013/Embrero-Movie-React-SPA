@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
+        "title": "Spider-Man: Brand New Day",
+        "genre": "Action",
+        "rating": "8.7"
+    },
+    {
+        "id": 2,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/snBOuXDdhmTvlzMUvP9Em3Pp1u1.jpg",
+        "title": "Dhurandhar",
+        "genre": "Action",
+        "rating": "7.6"
+    },
+    {
+        "id": 3,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
+        "title": "Top Gun: Maverick",
+        "genre": "Action",
+        "rating": "8.1"
+    },
+    {
+        "id": 4,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/wXqWR7dHncNRbxoEGybEy7QTe9h.jpg",
+        "title": "Inception",
+        "genre": "Action",
+        "rating": "8.8"
+    },
+    {
+        "id": 5,
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_face/9PXZIUsSDh4alB80jheWX4fhZmy.jpg",
+        "title": "F1",
+        "genre": "Adventure",
+        "rating": "8.0"
+    },
+    {
+        "id": 6,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/gVUSxtJM3arL5VIUIRNYde20EF0.jpg",
+        "title": "A Wednesday",
+        "genre": "Crime",
+        "rating": "7.9"
+    },
+    {
+        "id": 7,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/1kLYRzVj6byWvFa3SLrAOcfgnfp.jpg",
+        "title": "Titanic",
+        "genre": "Romance",
+        "rating": "7.3"
+    },
+    {
+        "id": 8,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/9BAjt8nSSms62uOVYn1t3C3dVto.jpg",
+        "title": "Bahubali",
+        "genre": "Adventure",
+        "rating": "7.8"
+    },
+    {
+        "id": 9,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "title": "Oppenheimer",
+        "genre": "Historical",
+        "rating": "8.5"
+    },
+    {
+        "id": 10,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/t2o989iMrkPkNl3epXGwVgJdjGE.jpg",
+        "title": "3 idiots",
+        "genre": "Sci-Fi",
+        "rating": "7.9"
+    },
+    {
+        "id": 11,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/Cw4hIUIAmSYfK9QfaUW5igp9La.jpg",
+        "title": "Forrest Gump",
+        "genre": "Drama",
+        "rating": "7.6"
+    },
+    {
+        "id": 12,
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg",
+        "title": "The Lion King",
+        "genre": "Animation",
+        "rating": "8.0"
+    }
+]

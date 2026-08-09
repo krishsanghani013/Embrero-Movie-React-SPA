@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* EMBRERO — Ember Noir + Ember Glow Global Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2A2A2A;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF6B35;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Select element dark styling */
+select {
+    color-scheme: dark;
+}
