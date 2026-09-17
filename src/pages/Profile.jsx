@@ -487,6 +487,7 @@ function Profile() {
                             {moviesData.slice(0, 6).map((movie) => (
                                 <div key={movie.id} className="flex-shrink-0 w-44">
                                     <MovieCard
+                                        id={movie.id}
                                         image={movie.image}
                                         title={movie.title}
                                         genre={movie.genre}

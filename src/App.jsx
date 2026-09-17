@@ -18,7 +18,10 @@ function App() {
                 <Route path="/movies" element={<Movies />} />
 
                 <Route path="/movie-details" element={<MovieDetails />} />
+                <Route path="/movie-details/:id" element={<MovieDetails />} />
+                <Route path="/movie/:id" element={<MovieDetails />} />
 
+                <Route path="/watchlist" element={<Watchlist />} />
                 <Route path="/Watchlist" element={<Watchlist />} />
 
                 <Route path="/login" element={<Login />} />

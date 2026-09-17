@@ -19,20 +19,20 @@ function Home() {
                 {/* hero section */}
                 <section
                     id="hero-section"
-                    className="relative w-full min-h-[600px] overflow-hidden bg-gradient-to-br from-[#080808] via-[#0D0D0D] to-[#1A0D07]"
+                    className="relative w-full min-h-150 overflow-hidden bg-linear-to-br from-[#080808] via-[#0D0D0D] to-[#1A0D07]"
                 >
 
                     <div className="absolute inset-0 overflow-hidden">
 
                         <div className="absolute -top-20 -right-20 w-96 h-96 bg-[#FF6B35]/10 rounded-full blur-3xl"></div>
 
-                        <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-[#E85D04]/10 rounded-full blur-3xl"></div>
+                        <div className="absolute -bottom-32 -left-32 w-125 h-125 bg-[#E85D04]/10 rounded-full blur-3xl"></div>
 
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#FFB000]/5 rounded-full blur-3xl"></div>
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-175 bg-[#FFB000]/5 rounded-full blur-3xl"></div>
 
                     </div>
 
-                    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[600px] flex items-center">
+                    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-150 flex items-center">
 
                         <div className="flex flex-col lg:flex-row items-center gap-12 w-full">
 
@@ -79,15 +79,15 @@ function Home() {
                                 <div className="flex gap-4">
 
                                     <Link
-                                        to="/movie-details"
-                                        className="px-7 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#E85D04] font-semibold transition-all duration-[250ms] shadow-[0_8px_24px_rgba(255,107,53,0.3)] hover:shadow-[0_16px_40px_rgba(255,107,53,0.4)] hover:-translate-y-[2px]"
+                                        to="/movie-details/1"
+                                        className="px-7 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#E85D04] font-semibold transition-all duration-250 shadow-[0_8px_24px_rgba(255,107,53,0.3)] hover:shadow-[0_16px_40px_rgba(255,107,53,0.4)] hover:-translate-y-0.5"
                                     >
                                         <i className="fa-solid fa-play mr-2"></i>
                                         Watch Now
                                     </Link>
 
                                     <button
-                                        className="px-7 py-3 bg-[#1C1C1C] border border-[#3A3A3A] text-[#D4D4D8] rounded-lg hover:bg-[#242424] hover:border-[#FF6B35] hover:text-[#FF6B35] font-semibold transition-all duration-[250ms]"
+                                        className="px-7 py-3 bg-[#1C1C1C] border border-[#3A3A3A] text-[#D4D4D8] rounded-lg hover:bg-[#242424] hover:border-[#FF6B35] hover:text-[#FF6B35] font-semibold transition-all duration-250"
                                     >
                                         <i className="fa-regular fa-heart mr-2"></i>
                                         Add to Favorites
@@ -100,15 +100,16 @@ function Home() {
                             {/* right ps */}
                             <div className="hidden lg:flex flex-1 justify-end">
 
-                                <div className="w-[380px] h-[500px] rounded-3xl overflow-hidden border border-[#3A3A3A] shadow-[0_24px_60px_rgba(255,107,53,0.2)] bg-cover bg-center">
-
+                                <Link
+                                    to="/movie-details/1"
+                                    className="w-95 h-140 rounded-3xl overflow-hidden border border-[#3A3A3A] shadow-[0_24px_60px_rgba(255,107,53,0.2)] bg-cover bg-center group transition-transform duration-300 hover:scale-102 hover:border-[#FF6B35]"
+                                >
                                     <img
                                         src="https://media.themoviedb.org/t/p/w440_and_h660_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg"
-                                        alt="The Dark Horizon"
-                                        className="w-full h-full"
+                                        alt="Spider-Man: Brand New Day"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                     />
-
-                                </div>
+                                </Link>
 
                             </div>
 

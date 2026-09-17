@@ -1,86 +1,578 @@
 [
     {
         "id": 1,
-        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
         "title": "Spider-Man: Brand New Day",
+        "tagline": "Even if no one remembers me, I'll keep protecting them.",
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=1200&auto=format&fit=crop&q=80",
         "genre": "Action",
-        "rating": "8.7"
+        "genres": ["Action", "Sci-Fi", "Adventure"],
+        "rating": "8.7",
+        "totalRatings": "12,486",
+        "releaseDate": "Mar 01, 2026",
+        "year": "2026",
+        "runtime": "2h 28m",
+        "language": "English",
+        "overview": "The movie follows an isolated Peter Parker four years after No Way Home as he protects a New York City that no longer remembers him, balancing his dual life while confronting new threats that emerge from the shadows.",
+        "director": "Destin Daniel Cretton",
+        "budget": "$225 Million",
+        "status": "In Production",
+        "production": "Columbia Pictures, Marvel Studios, Pascal Pictures",
+        "ratingsBreakdown": { "5": 85, "4": 10, "3": 3, "2": 1, "1": 1 },
+        "cast": [
+            {
+                "name": "Tom Holland",
+                "role": "Peter Parker / Spider-Man",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+            },
+            {
+                "name": "Sadie Sink",
+                "role": "Jean Grey",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+            },
+            {
+                "name": "Tramell Tillman",
+                "role": "William 'Bill' Metzger",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
+            },
+            {
+                "name": "Zendaya",
+                "role": "Michelle 'MJ' Jones",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/rBtEEt2slgeWkc26OniMmZmsvaA.jpg"
+            },
+            {
+                "name": "Jacob Batalon",
+                "role": "Ned Leeds",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/yX5nFz1yvW8s24p5qF9LwT6qjX2.jpg"
+            }
+        ]
     },
     {
         "id": 2,
-        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/snBOuXDdhmTvlzMUvP9Em3Pp1u1.jpg",
         "title": "Dhurandhar",
+        "tagline": "When duty calls, legends rise from the shadows.",
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/snBOuXDdhmTvlzMUvP9Em3Pp1u1.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1200&auto=format&fit=crop&q=80",
         "genre": "Action",
-        "rating": "7.6"
+        "genres": ["Action", "Thriller", "Crime"],
+        "rating": "7.6",
+        "totalRatings": "8,920",
+        "releaseDate": "Oct 18, 2025",
+        "year": "2025",
+        "runtime": "2h 40m",
+        "language": "Hindi",
+        "overview": "A high-octane espionage action thriller chronicling covert intelligence operations in hostile territory, featuring intense tactical warfare and high-stakes national security missions.",
+        "director": "Aditya Dhar",
+        "budget": "$30 Million (₹250 Cr)",
+        "status": "Post-Production",
+        "production": "Jio Studios, B62 Studios",
+        "ratingsBreakdown": { "5": 68, "4": 20, "3": 8, "2": 3, "1": 1 },
+        "cast": [
+            {
+                "name": "Ranveer Singh",
+                "role": "Major Kabir Singh",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/a54Y5r79237BshZ3iMvQxVn7fQy.jpg"
+            },
+            {
+                "name": "Sanjay Dutt",
+                "role": "Vikram Rathore",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/qQ8hY7aP9vH6E1d2lWqB6R8mJbK.jpg"
+            },
+            {
+                "name": "R. Madhavan",
+                "role": "RAW Chief Ajay Sanyal",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/rQYlO62n1f2T9K6B3b4Jv8N2M7X.jpg"
+            },
+            {
+                "name": "Akshaye Khanna",
+                "role": "Devendra",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/8Vn1t9Y6g2Q3w4E5r6T7y8U9i0o.jpg"
+            },
+            {
+                "name": "Arjun Rampal",
+                "role": "Farooq",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/b4v7n8m9j1k2l3o4p5q6r7s8t9u.jpg"
+            }
+        ]
     },
     {
         "id": 3,
-        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
         "title": "Top Gun: Maverick",
+        "tagline": "Feel the need. The need for speed.",
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1517976487588-466a33777558?w=1200&auto=format&fit=crop&q=80",
         "genre": "Action",
-        "rating": "8.1"
+        "genres": ["Action", "Drama", "Adventure"],
+        "rating": "8.1",
+        "totalRatings": "45,310",
+        "releaseDate": "May 27, 2022",
+        "year": "2022",
+        "runtime": "2h 10m",
+        "language": "English",
+        "overview": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on an impossible mission that demands the ultimate sacrifice.",
+        "director": "Joseph Kosinski",
+        "budget": "$170 Million",
+        "status": "Released",
+        "production": "Paramount Pictures, Skydance Media, Jerry Bruckheimer Films",
+        "ratingsBreakdown": { "5": 78, "4": 16, "3": 4, "2": 1, "1": 1 },
+        "cast": [
+            {
+                "name": "Tom Cruise",
+                "role": "Capt. Pete 'Maverick' Mitchell",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/gThaIXgpCm3ugyo94GsiVM552I.jpg"
+            },
+            {
+                "name": "Miles Teller",
+                "role": "Lt. Bradley 'Rooster' Bradshaw",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/cg3LW0xXyzr4gq6K4c2Y2B9w7rX.jpg"
+            },
+            {
+                "name": "Jennifer Connelly",
+                "role": "Penny Benjamin",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/3oWEmn0k6v0a8g0b2c3d4e5f6g7.jpg"
+            },
+            {
+                "name": "Jon Hamm",
+                "role": "Vice Adm. Beau 'Cyclone' Simpson",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/a54Y5r79237BshZ3iMvQxVn7fQy.jpg"
+            },
+            {
+                "name": "Glen Powell",
+                "role": "Lt. Jake 'Hangman' Seresin",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/m2r4y6u8i0o1p2q3w4e5r6t7y8u.jpg"
+            }
+        ]
     },
     {
         "id": 4,
-        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/wXqWR7dHncNRbxoEGybEy7QTe9h.jpg",
         "title": "Inception",
+        "tagline": "Your mind is the scene of the crime.",
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/wXqWR7dHncNRbxoEGybEy7QTe9h.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&auto=format&fit=crop&q=80",
         "genre": "Action",
-        "rating": "8.8"
+        "genres": ["Action", "Sci-Fi", "Adventure", "Thriller"],
+        "rating": "8.8",
+        "totalRatings": "68,900",
+        "releaseDate": "Jul 16, 2010",
+        "year": "2010",
+        "runtime": "2h 28m",
+        "language": "English",
+        "overview": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his entire team.",
+        "director": "Christopher Nolan",
+        "budget": "$160 Million",
+        "status": "Released",
+        "production": "Warner Bros. Pictures, Legendary Entertainment, Syncopy",
+        "ratingsBreakdown": { "5": 88, "4": 8, "3": 2, "2": 1, "1": 1 },
+        "cast": [
+            {
+                "name": "Leonardo DiCaprio",
+                "role": "Dom Cobb",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg"
+            },
+            {
+                "name": "Joseph Gordon-Levitt",
+                "role": "Arthur",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/4wv5mYcKqP9x7k5v4w3e2r1t0y9.jpg"
+            },
+            {
+                "name": "Elliot Page",
+                "role": "Ariadne",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/tp1e2r3t4y5u6i7o8p9a0s1d2f3.jpg"
+            },
+            {
+                "name": "Tom Hardy",
+                "role": "Eames",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/yVGF93v9qG2v7k6m5n4b3v2c1x0.jpg"
+            },
+            {
+                "name": "Ken Watanabe",
+                "role": "Mr. Saito",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/q1w2e3r4t5y6u7i8o9p0a1s2d3f.jpg"
+            }
+        ]
     },
     {
         "id": 5,
-        "image": "https://media.themoviedb.org/t/p/w600_and_h900_face/9PXZIUsSDh4alB80jheWX4fhZmy.jpg",
         "title": "F1",
+        "tagline": "Speed is nothing without control.",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_face/9PXZIUsSDh4alB80jheWX4fhZmy.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1200&auto=format&fit=crop&q=80",
         "genre": "Adventure",
-        "rating": "8.0"
+        "genres": ["Action", "Drama", "Sport"],
+        "rating": "8.0",
+        "totalRatings": "14,200",
+        "releaseDate": "Jun 27, 2025",
+        "year": "2025",
+        "runtime": "2h 15m",
+        "language": "English",
+        "overview": "A retired Formula One veteran driver returns to the tarmac to mentor and race alongside a promising young rookie prodigy for the fictional APXGP team against the world's greatest competitors.",
+        "director": "Joseph Kosinski",
+        "budget": "$300 Million",
+        "status": "Post-Production",
+        "production": "Apple Studios, Dawn Apollo Films, Jerry Bruckheimer Films",
+        "ratingsBreakdown": { "5": 75, "4": 18, "3": 5, "2": 1, "1": 1 },
+        "cast": [
+            {
+                "name": "Brad Pitt",
+                "role": "Sonny Hayes",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/cckcYc2v0yh1tc9RRnx19cc8Ns6.jpg"
+            },
+            {
+                "name": "Damson Idris",
+                "role": "Joshua Pearce",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/1a2b3c4d5e6f7g8h9i0j1k2l3m4.jpg"
+            },
+            {
+                "name": "Kerry Condon",
+                "role": "Kate",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/n8m9l0k1j2h3g4f5d6s7a8q9w0e.jpg"
+            },
+            {
+                "name": "Javier Bardem",
+                "role": "Ruben",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/z1x2c3v4b5n6m7l8k9j0h1g2f3d.jpg"
+            },
+            {
+                "name": "Tobias Menzies",
+                "role": "Banning",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/e1r2t3y4u5i6o7p8a9s0d1f2g3h.jpg"
+            }
+        ]
     },
     {
         "id": 6,
-        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/gVUSxtJM3arL5VIUIRNYde20EF0.jpg",
         "title": "A Wednesday",
+        "tagline": "A common man's fight against fear.",
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/gVUSxtJM3arL5VIUIRNYde20EF0.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80",
         "genre": "Crime",
-        "rating": "7.9"
+        "genres": ["Crime", "Drama", "Thriller", "Mystery"],
+        "rating": "7.9",
+        "totalRatings": "19,840",
+        "releaseDate": "Sep 05, 2008",
+        "year": "2008",
+        "runtime": "1h 44m",
+        "language": "Hindi",
+        "overview": "A retiring police commissioner reminisces about the most baffling case of his career: an anonymous man who placed bombs across Mumbai and held the entire police department hostage with an extraordinary ultimatum.",
+        "director": "Neeraj Pandey",
+        "budget": "$1.5 Million (₹12 Cr)",
+        "status": "Released",
+        "production": "UTV Motion Pictures, Friday Filmworks",
+        "ratingsBreakdown": { "5": 76, "4": 18, "3": 4, "2": 1, "1": 1 },
+        "cast": [
+            {
+                "name": "Naseeruddin Shah",
+                "role": "The Common Man",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/q1a2s3d4f5g6h7j8k9l0z1x2c3v.jpg"
+            },
+            {
+                "name": "Anupam Kher",
+                "role": "Prakash Rathod",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/w1e2r3t4y5u6i7o8p9a0s1d2f3g.jpg"
+            },
+            {
+                "name": "Jimmy Sheirgill",
+                "role": "Arif Khan",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/e1r2t3y4u5i6o7p8a9s0d1f2g3h.jpg"
+            },
+            {
+                "name": "Deepal Shaw",
+                "role": "Naina Roy",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/r1t2y3u4i5o6p7a8s9d0f1g2h3j.jpg"
+            },
+            {
+                "name": "Aamir Bashir",
+                "role": "Jai Singh",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/t1y2u3i4o5p6a7s8d9f0g1h2j3k.jpg"
+            }
+        ]
     },
     {
         "id": 7,
-        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/1kLYRzVj6byWvFa3SLrAOcfgnfp.jpg",
         "title": "Titanic",
+        "tagline": "Nothing on earth could come between them.",
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/1kLYRzVj6byWvFa3SLrAOcfgnfp.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1200&auto=format&fit=crop&q=80",
         "genre": "Romance",
-        "rating": "7.3"
+        "genres": ["Drama", "Romance", "History"],
+        "rating": "7.3",
+        "totalRatings": "52,400",
+        "releaseDate": "Dec 19, 1997",
+        "year": "1997",
+        "runtime": "3h 14m",
+        "language": "English",
+        "overview": "An aristocratic young woman falls in love with a kind but impoverished artist aboard the luxurious, ill-fated R.M.S. Titanic as destiny tests their bond against the freezing Atlantic Ocean.",
+        "director": "James Cameron",
+        "budget": "$200 Million",
+        "status": "Released",
+        "production": "20th Century Fox, Paramount Pictures, Lightstorm Entertainment",
+        "ratingsBreakdown": { "5": 82, "4": 12, "3": 4, "2": 1, "1": 1 },
+        "cast": [
+            {
+                "name": "Leonardo DiCaprio",
+                "role": "Jack Dawson",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg"
+            },
+            {
+                "name": "Kate Winslet",
+                "role": "Rose DeWitt Bukater",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/e3tdop3Whseub8nn89Y2FYAh19W.jpg"
+            },
+            {
+                "name": "Billy Zane",
+                "role": "Caledon Hockley",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/1a2s3d4f5g6h7j8k9l0z1x2c3v4.jpg"
+            },
+            {
+                "name": "Kathy Bates",
+                "role": "Margaret 'Molly' Brown",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/2s3d4f5g6h7j8k9l0z1x2c3v4b5.jpg"
+            },
+            {
+                "name": "Frances Fisher",
+                "role": "Ruth DeWitt Bukater",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/3d4f5g6h7j8k9l0z1x2c3v4b5n6.jpg"
+            }
+        ]
     },
     {
         "id": 8,
+        "title": "Bahubali: The Beginning",
+        "tagline": "Great kingdoms aren't inherited, they are forged in battle.",
         "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/9BAjt8nSSms62uOVYn1t3C3dVto.jpg",
-        "title": "Bahubali",
+        "backdrop": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&auto=format&fit=crop&q=80",
         "genre": "Adventure",
-        "rating": "7.8"
+        "genres": ["Action", "Adventure", "Fantasy", "Drama"],
+        "rating": "7.8",
+        "totalRatings": "31,200",
+        "releaseDate": "Jul 10, 2015",
+        "year": "2015",
+        "runtime": "2h 39m",
+        "language": "Telugu / Hindi",
+        "overview": "An adventurous man raised by villagers uncovers his royal lineage and sets out to free his mother from the clutches of a tyrannical ruler in the ancient kingdom of Mahishmati.",
+        "director": "S.S. Rajamouli",
+        "budget": "$25 Million (₹180 Cr)",
+        "status": "Released",
+        "production": "Arka Media Works",
+        "ratingsBreakdown": { "5": 79, "4": 15, "3": 4, "2": 1, "1": 1 },
+        "cast": [
+            {
+                "name": "Prabhas",
+                "role": "Amarendra Baahubali / Shivudu",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/yX5nFz1yvW8s24p5qF9LwT6qjX2.jpg"
+            },
+            {
+                "name": "Rana Daggubati",
+                "role": "Bhallaladeva",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/b4v7n8m9j1k2l3o4p5q6r7s8t9u.jpg"
+            },
+            {
+                "name": "Anushka Shetty",
+                "role": "Devasena",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/3oWEmn0k6v0a8g0b2c3d4e5f6g7.jpg"
+            },
+            {
+                "name": "Tamannaah",
+                "role": "Avanthika",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/rBtEEt2slgeWkc26OniMmZmsvaA.jpg"
+            },
+            {
+                "name": "Sathyaraj",
+                "role": "Kattappa",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/qQ8hY7aP9vH6E1d2lWqB6R8mJbK.jpg"
+            }
+        ]
     },
     {
         "id": 9,
-        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
         "title": "Oppenheimer",
+        "tagline": "The world forever changes.",
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&auto=format&fit=crop&q=80",
         "genre": "Historical",
-        "rating": "8.5"
+        "genres": ["Biography", "Drama", "History"],
+        "rating": "8.5",
+        "totalRatings": "61,100",
+        "releaseDate": "Jul 21, 2023",
+        "year": "2023",
+        "runtime": "3h 00m",
+        "language": "English",
+        "overview": "The gripping story of American theoretical physicist J. Robert Oppenheimer, the director of the Manhattan Project, and the momentous events leading to the creation and political aftermath of the atomic bomb.",
+        "director": "Christopher Nolan",
+        "budget": "$100 Million",
+        "status": "Released",
+        "production": "Universal Pictures, Syncopy, Atlas Entertainment",
+        "ratingsBreakdown": { "5": 86, "4": 10, "3": 3, "2": 1, "1": 0 },
+        "cast": [
+            {
+                "name": "Cillian Murphy",
+                "role": "J. Robert Oppenheimer",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/3Dsqhnr1d701d9g969c3a0e1f2.jpg"
+            },
+            {
+                "name": "Emily Blunt",
+                "role": "Katherine 'Kitty' Oppenheimer",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/n8m9l0k1j2h3g4f5d6s7a8q9w0e.jpg"
+            },
+            {
+                "name": "Matt Damon",
+                "role": "Leslie Groves",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/e1r2t3y4u5i6o7p8a9s0d1f2g3h.jpg"
+            },
+            {
+                "name": "Robert Downey Jr.",
+                "role": "Lewis Strauss",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/1YjdSym1jA75mAezI6twMmT2k2.jpg"
+            },
+            {
+                "name": "Florence Pugh",
+                "role": "Jean Tatlock",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/3oWEmn0k6v0a8g0b2c3d4e5f6g7.jpg"
+            }
+        ]
     },
     {
         "id": 10,
+        "title": "3 Idiots",
+        "tagline": "Don't chase success, chase excellence, and success will follow.",
         "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/t2o989iMrkPkNl3epXGwVgJdjGE.jpg",
-        "title": "3 idiots",
-        "genre": "Sci-Fi",
-        "rating": "7.9"
+        "backdrop": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&auto=format&fit=crop&q=80",
+        "genre": "Comedy",
+        "genres": ["Comedy", "Drama"],
+        "rating": "8.4",
+        "totalRatings": "73,400",
+        "releaseDate": "Dec 25, 2009",
+        "year": "2009",
+        "runtime": "2h 50m",
+        "language": "Hindi",
+        "overview": "Two friends embark on a journey across India to locate their long-lost college roommate, reminiscing about their engineering days and the genius free-thinker who revolutionized their perspective on life.",
+        "director": "Rajkumar Hirani",
+        "budget": "$7.5 Million (₹55 Cr)",
+        "status": "Released",
+        "production": "Vinod Chopra Films",
+        "ratingsBreakdown": { "5": 90, "4": 8, "3": 1, "2": 1, "1": 0 },
+        "cast": [
+            {
+                "name": "Aamir Khan",
+                "role": "Ranchhoddas 'Rancho' / Phunsukh Wangdu",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/rQYlO62n1f2T9K6B3b4Jv8N2M7X.jpg"
+            },
+            {
+                "name": "R. Madhavan",
+                "role": "Farhan Qureshi",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/a54Y5r79237BshZ3iMvQxVn7fQy.jpg"
+            },
+            {
+                "name": "Sharman Joshi",
+                "role": "Raju Rastogi",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/q1a2s3d4f5g6h7j8k9l0z1x2c3v.jpg"
+            },
+            {
+                "name": "Kareena Kapoor",
+                "role": "Pia Sahastrabuddhe",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/rBtEEt2slgeWkc26OniMmZmsvaA.jpg"
+            },
+            {
+                "name": "Boman Irani",
+                "role": "Viru Sahastrabuddhe ('Virus')",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/w1e2r3t4y5u6i7o8p9a0s1d2f3g.jpg"
+            }
+        ]
     },
     {
         "id": 11,
-        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/Cw4hIUIAmSYfK9QfaUW5igp9La.jpg",
         "title": "Forrest Gump",
+        "tagline": "Life is like a box of chocolates. You never know what you're gonna get.",
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/Cw4hIUIAmSYfK9QfaUW5igp9La.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
         "genre": "Drama",
-        "rating": "7.6"
+        "genres": ["Drama", "Romance"],
+        "rating": "8.8",
+        "totalRatings": "79,200",
+        "releaseDate": "Jul 06, 1994",
+        "year": "1994",
+        "runtime": "2h 22m",
+        "language": "English",
+        "overview": "The history of the United States from the 1950s to the '70s unfolds through the innocent eyes of an Alabama man with an IQ of 75, whose pure heart touches countless lives while yearning for his childhood love.",
+        "director": "Robert Zemeckis",
+        "budget": "$55 Million",
+        "status": "Released",
+        "production": "Paramount Pictures",
+        "ratingsBreakdown": { "5": 89, "4": 8, "3": 2, "2": 1, "1": 0 },
+        "cast": [
+            {
+                "name": "Tom Hanks",
+                "role": "Forrest Gump",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/xNdFs2e0j3b6r8n4m9l0k1j2h3g.jpg"
+            },
+            {
+                "name": "Robin Wright",
+                "role": "Jenny Curran",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/3oWEmn0k6v0a8g0b2c3d4e5f6g7.jpg"
+            },
+            {
+                "name": "Gary Sinise",
+                "role": "Lt. Dan Taylor",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/1a2s3d4f5g6h7j8k9l0z1x2c3v4.jpg"
+            },
+            {
+                "name": "Sally Field",
+                "role": "Mrs. Gump",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/e3tdop3Whseub8nn89Y2FYAh19W.jpg"
+            },
+            {
+                "name": "Mykelti Williamson",
+                "role": "Bubba Blue",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/e1r2t3y4u5i6o7p8a9s0d1f2g3h.jpg"
+            }
+        ]
     },
     {
         "id": 12,
-        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg",
         "title": "The Lion King",
+        "tagline": "The King has returned.",
+        "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg",
+        "backdrop": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1200&auto=format&fit=crop&q=80",
         "genre": "Animation",
-        "rating": "8.0"
+        "genres": ["Animation", "Adventure", "Drama", "Family"],
+        "rating": "8.5",
+        "totalRatings": "58,700",
+        "releaseDate": "Jun 24, 1994",
+        "year": "1994",
+        "runtime": "1h 28m",
+        "language": "English",
+        "overview": "Lion prince Simba and his father Mufasa are targeted by his bitter uncle Scar, who plots to seize the throne. Exiled and burdened with grief, Simba must embrace his destiny and reclaim his place in the Circle of Life.",
+        "director": "Roger Allers, Rob Minkoff",
+        "budget": "$45 Million",
+        "status": "Released",
+        "production": "Walt Disney Pictures, Walt Disney Animation Studios",
+        "ratingsBreakdown": { "5": 87, "4": 9, "3": 3, "2": 1, "1": 0 },
+        "cast": [
+            {
+                "name": "Matthew Broderick",
+                "role": "Simba (voice)",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/a54Y5r79237BshZ3iMvQxVn7fQy.jpg"
+            },
+            {
+                "name": "James Earl Jones",
+                "role": "Mufasa (voice)",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/q1a2s3d4f5g6h7j8k9l0z1x2c3v.jpg"
+            },
+            {
+                "name": "Jeremy Irons",
+                "role": "Scar (voice)",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/w1e2r3t4y5u6i7o8p9a0s1d2f3g.jpg"
+            },
+            {
+                "name": "Moira Kelly",
+                "role": "Nala (voice)",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/3oWEmn0k6v0a8g0b2c3d4e5f6g7.jpg"
+            },
+            {
+                "name": "Nathan Lane",
+                "role": "Timon (voice)",
+                "image": "https://media.themoviedb.org/t/p/w132_and_h132_face/1a2s3d4f5g6h7j8k9l0z1x2c3v4.jpg"
+            }
+        ]
     }
 ]

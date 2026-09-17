@@ -1,0 +1,104 @@
+EMBRERO — EMBER NOIR + EMBER GLOW COLOR THEME
+
+CORE COLORS
+Void Black: #080808
+Noir Black: #0D0D0D
+Charcoal: #151515
+Dark Surface: #1C1C1C
+Elevated Surface: #242424
+
+PRIMARY EMBER COLORS
+Ember Orange: #FF6B35
+Burnt Ember: #E85D04
+Deep Ember: #C2410C
+Amber Glow: #FFB000
+Golden Ember: #FFC857
+
+RED / CRIMSON COLORS
+Cherry Red: #C1121F
+Deep Crimson: #8B1520
+
+TEXT COLORS
+Pure White: #FFFFFF
+Soft White: #F5F5F5
+Light Gray: #D4D4D8
+Muted Gray: #A1A1AA
+Dark Gray: #71717A
+
+BORDER COLORS
+Border Gray: #2A2A2A
+Subtle Border: #222222
+Strong Border: #3A3A3A
+
+STATE COLORS
+Success: #22C55E
+Warning: #FFB000
+Error: #C1121F
+Info: #60A5FA
+Neutral: #A1A1AA
+
+PRIMARY EMBER GLOW GRADIENT
+#FFB000 → #FF6B35 → #E85D04
+
+ADDITIONAL GRADIENTS
+Hot Ember: #FFC857 → #FF6B35 → #C2410C
+Fire Glow: #FFB000 → #FF6B35 → #C1121F
+Deep Fire: #FF6B35 → #E85D04 → #8B1520
+Golden Ember: #FFC857 → #FFB000 → #FF6B35
+Crimson Ember: #FF6B35 → #C1121F → #8B1520
+Subtle Ember: #E85D04 → #C2410C
+
+DARK GRADIENTS
+Noir: #080808 → #0D0D0D
+Noir Surface: #0D0D0D → #151515
+Charcoal: #151515 → #1C1C1C
+Deep Ember Noir: #080808 → #1C0D08
+Black to Ember: #080808 → #1A0D07 → #3A1708
+
+ACCENT HIERARCHY
+Primary Accent: #FF6B35
+Strong Accent: #E85D04
+Deep Accent: #C2410C
+Glow Accent: #FFB000
+Highlight Accent: #FFC857
+Red Accent: #C1121F
+Deep Red Accent: #8B1520
+
+TEXT HIERARCHY
+Primary Text: #FFFFFF
+Secondary Text: #F5F5F5
+Tertiary Text: #D4D4D8
+Muted Text: #A1A1AA
+Disabled Text: #71717A
+
+OVERLAY / TRANSPARENCY COLORS
+Ember 10%: #FF6B351A
+Ember 15%: #FF6B3526
+Ember 20%: #FF6B3533
+Amber 10%: #FFB0001A
+Red 10%: #C1121F1A
+White 5%: #FFFFFF0D
+White 10%: #FFFFFF1A
+
+MASTER PALETTE
+#080808
+#0D0D0D
+#151515
+#1C1C1C
+#242424
+#FF6B35
+#E85D04
+#C2410C
+#FFB000
+#FFC857
+#C1121F
+#8B1520
+#FFFFFF
+#F5F5F5
+#D4D4D8
+#A1A1AA
+#71717A
+#2A2A2A
+
+SIGNATURE EMBRERO GRADIENT
+#FFB000 → #FF6B35 → #E85D04

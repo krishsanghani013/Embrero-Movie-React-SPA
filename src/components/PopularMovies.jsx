@@ -42,6 +42,7 @@ function PopularMovies() {
                     {moviesData.slice(0, 5).map((movie) => (
                         <MovieCard
                             key={movie.id}
+                            id={movie.id}
                             image={movie.image}
                             title={movie.title}
                             genre={movie.genre}

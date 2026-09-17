@@ -42,6 +42,7 @@ function UpcomingMovies() {
                     {moviesData.slice(5, 12).map((movie) => (
                         <MovieCard
                             key={movie.id}
+                            id={movie.id}
                             image={movie.image}
                             title={movie.title}
                             genre={movie.genre}

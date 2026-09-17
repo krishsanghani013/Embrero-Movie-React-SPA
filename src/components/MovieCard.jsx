@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-function MovieCard({ image, title, genre, rating }) {
+function MovieCard({ id, image, title, genre, rating }) {
     return (
         <Link
-            to="/movie-details"
-            className="group block flex-shrink-0 bg-[#1C1C1C] border border-[#2A2A2A] rounded-[16px] overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_50px_rgba(255,107,53,0.2)] transition-all duration-300"
+            to={id ? `/movie-details/${id}` : "/movie-details"}
+            className="group block shrink-0 bg-[#1C1C1C] border border-[#2A2A2A] rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_50px_rgba(255,107,53,0.2)] transition-all duration-300"
         >
-            <div className="relative aspect-[2/3] overflow-hidden">
+            <div className="relative aspect-2/3 overflow-hidden">
 
                 <img
                     src={image}
@@ -15,7 +15,13 @@ function MovieCard({ image, title, genre, rating }) {
                 />
 
                 <button
-                    className="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#080808]/80 flex items-center justify-center text-[#71717A] hover:text-[#FF6B35]"
+                    type="button"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }}
+                    className="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#080808]/80 flex items-center justify-center text-[#71717A] hover:text-[#FF6B35] transition-colors"
+                    aria-label="Add to favorites"
                 >
                     <i className="fa-regular fa-heart text-xs"></i>
                 </button>

@@ -208,6 +208,7 @@ function Movies() {
                             {moviesData.map((movie) => (
                                 <MovieCard
                                     key={movie.id}
+                                    id={movie.id}
                                     title={movie.title}
                                     genre={movie.genre}
                                     rating={movie.rating}
