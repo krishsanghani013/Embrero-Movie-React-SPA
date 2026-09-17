@@ -1,85 +1,86 @@
 import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
-  const tabClass = ({ isActive }) =>
-    `text-xs sm:text-sm font-semibold py-1 relative transition-colors whitespace-nowrap ${
+  const desktopNavLinkClass = ({ isActive }) =>
+    `px-3.5 py-1.5 text-xs font-semibold rounded-lg transition-all relative ${
       isActive
-        ? "text-[#FF6B35] after:content-[''] after:absolute after:-bottom-[11px] after:left-0 after:right-0 after:h-[2px] after:bg-[#FF6B35] after:rounded-full"
-        : "text-[#A1A1AA] hover:text-white"
+        ? "text-ember bg-ember/15 after:content-[''] after:absolute after:-bottom-1 after:left-3.5 after:right-3.5 after:h-0.5 after:bg-ember after:rounded-full"
+        : "text-zinc-400 hover:text-white hover:bg-white/5"
     }`;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0D0D0D] border-b border-[#2A2A2A] flex flex-col" id="app-navbar">
-      {/* Top Row: Hamburger / Brand / Actions */}
-      <div className="flex items-center justify-between h-[54px] px-4 max-w-7xl mx-auto w-full">
-        <Link
-          to="/menu"
-          className="flex items-center justify-center w-9 h-9 rounded-lg text-[#D4D4D8] text-base hover:text-[#FF6B35] hover:bg-[#FF6B35]/10 transition-colors"
-          aria-label="Open menu"
-          id="nav-menu-btn"
-        >
-          <i className="fa-solid fa-bars"></i>
-        </Link>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-noir/90 backdrop-blur-xl border-b border-border-default transition-all" id="app-navbar">
+      <div className="flex items-center justify-between h-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Left Side: Brand Logo & Desktop Nav */}
+        <div className="flex items-center gap-6 sm:gap-8">
+          <Link to="/" className="flex items-center gap-2.5 group" id="nav-brand-link">
+            <img
+              src="/Enbrero.svg"
+              alt="Embrero Logo"
+              className="w-8 h-8 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:drop-shadow-[0_0_10px_rgba(255,107,53,0.6)]"
+            />
+            <span className="text-base sm:text-lg font-black tracking-widest text-white uppercase">
+              Embr<span className="text-ember">ero</span>
+            </span>
+          </Link>
 
-        <Link to="/" className="flex items-center gap-2" id="nav-brand-link">
-          <img src="/Enbrero.svg" alt="Embrero Logo" className="w-7 h-7 object-contain" />
-          <span className="text-lg sm:text-xl font-black tracking-widest text-white uppercase">
-            Embr<span className="text-[#FF6B35]">ero</span>
-          </span>
-        </Link>
+          {/* Desktop Navigation Links */}
+          <nav className="hidden md:flex items-center gap-1.5" aria-label="Main navigation">
+            <NavLink to="/" end className={desktopNavLinkClass} id="nav-home">
+              Home
+            </NavLink>
+            <NavLink to="/movies" className={desktopNavLinkClass} id="nav-movies">
+              Movies
+            </NavLink>
+            <NavLink to="/categories" className={desktopNavLinkClass} id="nav-categories">
+              Categories
+            </NavLink>
+            <NavLink to="/watchlist" className={desktopNavLinkClass} id="nav-watchlist">
+              Watchlist
+            </NavLink>
+          </nav>
+        </div>
 
+        {/* Right Side: Actions */}
         <div className="flex items-center gap-1 sm:gap-2">
           <Link
             to="/search"
-            className="flex items-center justify-center w-9 h-9 rounded-lg text-[#D4D4D8] text-sm hover:text-[#FF6B35] hover:bg-[#FF6B35]/10 transition-colors"
-            aria-label="Search"
+            className="w-9 h-9 flex items-center justify-center rounded-lg text-zinc-300 hover:text-ember hover:bg-ember/10 transition-colors"
+            aria-label="Search movies"
             id="nav-search-quick"
           >
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass text-sm"></i>
           </Link>
 
-          <button
-            type="button"
-            className="relative flex items-center justify-center w-9 h-9 rounded-lg text-[#D4D4D8] text-base hover:text-[#FF6B35] hover:bg-[#FF6B35]/10 transition-colors"
+          <Link
+            to="/settings"
+            className="relative w-9 h-9 flex items-center justify-center rounded-lg text-zinc-300 hover:text-ember hover:bg-ember/10 transition-colors"
             aria-label="Notifications"
             id="nav-bell-btn"
           >
-            <i className="fa-regular fa-bell"></i>
-            <span className="absolute top-2 right-2 w-2 h-2 bg-[#FF6B35] rounded-full"></span>
-          </button>
+            <i className="fa-regular fa-bell text-sm"></i>
+            <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-ember shadow-[0_0_6px_rgba(255,107,53,0.8)]"></span>
+          </Link>
+
+          <Link
+            to="/profile"
+            className="w-9 h-9 flex items-center justify-center rounded-lg text-zinc-300 hover:text-ember hover:bg-ember/10 transition-colors"
+            aria-label="Profile"
+            id="nav-profile-btn"
+          >
+            <i className="fa-regular fa-user text-sm"></i>
+          </Link>
+
+          <Link
+            to="/menu"
+            className="w-9 h-9 flex items-center justify-center rounded-lg text-zinc-300 hover:text-ember hover:bg-ember/10 transition-colors"
+            aria-label="Open navigation menu"
+            id="nav-menu-btn"
+          >
+            <i className="fa-solid fa-bars text-sm"></i>
+          </Link>
         </div>
       </div>
-
-      {/* Second Row: Sub-navigation Tabs */}
-      <nav className="border-t border-[#222222] bg-[#080808] overflow-x-auto scrollbar-hide">
-        <ul className="flex items-center justify-start md:justify-center gap-5 sm:gap-8 h-11 px-4 max-w-7xl mx-auto list-none">
-          <li>
-            <NavLink to="/" end className={tabClass}>
-              Shows
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/movies" className={tabClass}>
-              Movies
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/categories" className={tabClass}>
-              Genres
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/search" className={tabClass}>
-              New &amp; Hot
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/watchlist" className={tabClass}>
-              Clips
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 }

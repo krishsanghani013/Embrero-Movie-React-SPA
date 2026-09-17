@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import BottomNav from "../../components/BottomNav/BottomNav";
@@ -6,28 +5,23 @@ import CategoryCard from "../../components/CategoryCard/CategoryCard";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 function Categories() {
-  const [selectedSubCategory, setSelectedSubCategory] = useState("All");
-
-  const genres = [
-    { title: "Action", icon: "fa-solid fa-burst", count: "120+ Titles" },
-    { title: "Comedy", icon: "fa-solid fa-masks-theater", count: "85+ Titles" },
-    { title: "Romance", icon: "fa-solid fa-heart", count: "64+ Titles" },
-    { title: "Horror", icon: "fa-solid fa-ghost", count: "48+ Titles" },
-    { title: "Sci-Fi", icon: "fa-solid fa-rocket", count: "92+ Titles" },
-    { title: "Thriller", icon: "fa-solid fa-skull-crossbones", count: "78+ Titles" },
-    { title: "Adventure", icon: "fa-solid fa-compass", count: "110+ Titles" },
-    { title: "Family", icon: "fa-solid fa-people-roof", count: "55+ Titles" },
+  // Exact 12 requested categories
+  const categoriesList = [
+    { title: "Action", icon: "fa-solid fa-burst", count: "140+ Titles" },
+    { title: "Adventure", icon: "fa-solid fa-compass", count: "115+ Titles" },
+    { title: "Animation", icon: "fa-solid fa-wand-magic-sparkles", count: "90+ Titles" },
+    { title: "Comedy", icon: "fa-solid fa-masks-theater", count: "105+ Titles" },
+    { title: "Crime", icon: "fa-solid fa-handcuffs", count: "75+ Titles" },
+    { title: "Drama", icon: "fa-solid fa-heart-pulse", count: "160+ Titles" },
+    { title: "Horror", icon: "fa-solid fa-ghost", count: "65+ Titles" },
+    { title: "Mystery", icon: "fa-solid fa-magnifying-glass-location", count: "55+ Titles" },
+    { title: "Romance", icon: "fa-solid fa-heart", count: "80+ Titles" },
+    { title: "Sci-Fi", icon: "fa-solid fa-rocket", count: "98+ Titles" },
+    { title: "Thriller", icon: "fa-solid fa-skull-crossbones", count: "88+ Titles" },
+    { title: "Documentary", icon: "fa-solid fa-video", count: "45+ Titles" },
   ];
 
-  const subCategories = [
-    "All",
-    "Bollywood",
-    "Anime",
-    "Documentary",
-    "Book Adaptations",
-  ];
-
-  const topCategories = [
+  const curatedCollections = [
     { title: "Blockbuster Hits", icon: "fa-solid fa-trophy", count: "50+ Titles" },
     { title: "Critically Acclaimed", icon: "fa-solid fa-award", count: "34+ Titles" },
     { title: "Indie Gems", icon: "fa-solid fa-gem", count: "28+ Titles" },
@@ -37,60 +31,50 @@ function Categories() {
   ];
 
   const moods = [
-    { title: "Feel Good", emoji: "✨", count: "Inspiring & light" },
+    { title: "Feel Good", emoji: "✨", count: "Inspiring & uplifting" },
     { title: "Emotional", emoji: "🥺", count: "Deep & heartfelt" },
-    { title: "Exciting", emoji: "⚡", count: "Adrenaline packed" },
-    { title: "Mind Bending", emoji: "🌀", count: "Mystery & twists" },
+    { title: "Adrenaline Rush", emoji: "⚡", count: "High-octane action" },
+    { title: "Mind Bending", emoji: "🌀", count: "Puzzles & plot twists" },
   ];
 
   return (
-    <div className="min-h-screen bg-[#080808] pt-[106px] pb-16">
+    <div className="min-h-screen bg-void pt-20 pb-24 md:pb-12 text-zinc-100">
       <Navbar />
 
-      <main className="max-w-7xl mx-auto p-4 sm:p-6">
-        {/* Browse by Genre */}
-        <section className="mb-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-6">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-white mb-1">Categories &amp; Genres</h1>
+          <p className="text-xs sm:text-sm text-zinc-400">
+            Explore films curated by genre, cinematic universe, and emotional mood.
+          </p>
+        </div>
+
+        {/* 12 Primary Genres */}
+        <section className="mb-9">
           <SectionHeader title="Browse by Genre" seeAllLink="/search" />
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-3.5">
-            {genres.map((genre) => (
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+            {categoriesList.map((category) => (
               <CategoryCard
-                key={genre.title}
-                title={genre.title}
-                icon={genre.icon}
-                count={genre.count}
-                to={`/search?genre=${genre.title}`}
+                key={category.title}
+                title={category.title}
+                icon={category.icon}
+                count={category.count}
+                to="/search"
               />
             ))}
           </div>
         </section>
 
-        {/* Categories Section with Filter Pills */}
-        <section className="mb-8">
+        {/* Curated Collections */}
+        <section className="mb-9">
           <SectionHeader title="Curated Collections" seeAllLink="/search" />
-          <div className="flex gap-2.5 overflow-x-auto pb-2 mb-5 scrollbar-hide">
-            {subCategories.map((sub) => (
-              <button
-                key={sub}
-                type="button"
-                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all cursor-pointer ${
-                  selectedSubCategory === sub
-                    ? "bg-[#FF6B35] text-white"
-                    : "bg-[#1C1C1C] border border-[#2A2A2A] text-[#D4D4D8] hover:bg-[#242424] hover:text-white"
-                }`}
-                onClick={() => setSelectedSubCategory(sub)}
-              >
-                {sub}
-              </button>
-            ))}
-          </div>
-
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
-            {topCategories.map((cat) => (
+            {curatedCollections.map((col) => (
               <CategoryCard
-                key={cat.title}
-                title={cat.title}
-                icon={cat.icon}
-                count={cat.count}
+                key={col.title}
+                title={col.title}
+                icon={col.icon}
+                count={col.count}
                 to="/search"
               />
             ))}
@@ -98,18 +82,18 @@ function Categories() {
         </section>
 
         {/* Browse by Mood */}
-        <section className="mb-8">
+        <section className="mb-9">
           <SectionHeader title="Browse by Mood" seeAllLink="/search" />
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-3.5">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {moods.map((mood) => (
               <Link
                 to="/search"
                 key={mood.title}
-                className="flex flex-col items-center justify-center p-5 bg-[#1C1C1C] border border-[#2A2A2A] rounded-xl text-center gap-2 transition-all hover:border-[#FF6B35] hover:-translate-y-1 hover:bg-[#242424]"
+                className="group flex flex-col items-center justify-center p-5 bg-surface border border-border-default rounded-xl text-center gap-2 transition-all hover:border-ember hover:bg-elevated hover:-translate-y-1 hover:shadow-[0_4px_16px_rgba(255,107,53,0.15)]"
               >
-                <span className="text-3xl">{mood.emoji}</span>
+                <span className="text-3xl transition-transform group-hover:scale-110">{mood.emoji}</span>
                 <span className="text-sm font-bold text-white">{mood.title}</span>
-                <span className="text-[11px] text-[#71717A]">{mood.count}</span>
+                <span className="text-[11px] text-zinc-500">{mood.count}</span>
               </Link>
             ))}
           </div>

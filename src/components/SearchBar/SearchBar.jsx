@@ -6,12 +6,12 @@ function SearchBar({
   id = "search-input",
 }) {
   return (
-    <div className="relative flex items-center w-full">
-      <i className="fa-solid fa-magnifying-glass absolute left-3.5 text-[#71717A] text-sm pointer-events-none"></i>
+    <div className="relative flex items-center w-full group">
+      <i className="fa-solid fa-magnifying-glass absolute left-3.5 text-zinc-500 text-sm pointer-events-none transition-colors"></i>
       <input
         type="text"
         id={id}
-        className="w-full h-12 bg-[#1C1C1C] border border-[#2A2A2A] rounded-xl pl-10 pr-10 text-white text-sm outline-none placeholder-[#71717A] focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/20 transition-all"
+        className="w-full h-12 bg-surface border border-border-default rounded-xl pl-10 pr-10 text-white text-sm outline-none focus:ring-2 focus:ring-ember/20 transition-all"
         placeholder={placeholder}
         value={value}
         onChange={onChange}
@@ -19,7 +19,7 @@ function SearchBar({
       {value && (
         <button
           type="button"
-          className="absolute right-3 w-6 h-6 flex items-center justify-center rounded-full text-[#71717A] hover:text-[#FF6B35] transition-colors text-sm"
+          className="absolute right-3 w-6 h-6 flex items-center justify-center rounded-full text-zinc-500 hover:text-white hover:bg-ember transition-colors text-xs"
           onClick={onClear}
           aria-label="Clear search"
         >

@@ -14,21 +14,22 @@ function Profile() {
     { ...moviesData[3], progress: 20 },
   ];
 
-  const watchlistPreview = moviesData.slice(4, 8);
+  const watchlistPreview = moviesData.slice(4, 9);
 
   const accountLinks = [
-    { label: "Personal Information", icon: "fa-regular fa-user", to: "/settings" },
-    { label: "Privacy Settings", icon: "fa-solid fa-shield-halved", to: "/settings" },
-    { label: "Notifications", icon: "fa-regular fa-bell", to: "/settings" },
-    { label: "Theme", icon: "fa-solid fa-palette", to: "/settings" },
-    { label: "Logout", icon: "fa-solid fa-right-from-bracket", to: "/logout", isLogout: true },
+    { label: "Account & Personal Details", icon: "fa-regular fa-user", to: "/settings" },
+    { label: "Playback & Video Quality", icon: "fa-solid fa-sliders", to: "/settings" },
+    { label: "Notification Preferences", icon: "fa-regular fa-bell", to: "/settings" },
+    { label: "Theme & Display", icon: "fa-solid fa-palette", to: "/settings" },
+    { label: "Privacy & Security", icon: "fa-solid fa-shield-halved", to: "/settings" },
+    { label: "Log Out", icon: "fa-solid fa-right-from-bracket", to: "/logout", isLogout: true },
   ];
 
   return (
-    <div className="min-h-screen bg-[#080808] pt-[106px] pb-16">
+    <div className="min-h-screen bg-void pt-20 pb-24 md:pb-12 text-zinc-100">
       <Navbar />
 
-      <main className="max-w-4xl mx-auto p-4 sm:p-6">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Profile Header */}
         <ProfileHeader
           name="Krish Sanghani"
@@ -37,36 +38,35 @@ function Profile() {
           onEdit={() => {}}
         />
 
-        {/* Statistics Grid */}
-        <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 mb-7">
-          <div className="bg-[#1C1C1C] border border-[#2A2A2A] rounded-xl p-3.5 sm:p-4 text-center flex flex-col items-center gap-1 hover:border-[#FF6B35] transition-colors">
-            <span className="text-xl sm:text-2xl font-extrabold text-[#FF6B35]">42</span>
-            <span className="text-[10px] sm:text-xs font-semibold text-[#A1A1AA] uppercase tracking-wider">
-              Movies Watched
-            </span>
+        {/* 4 Statistics Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-8">
+          <div className="bg-surface border border-border-default rounded-xl p-4 text-center flex flex-col items-center gap-1 hover:border-ember transition-colors">
+            <span className="text-2xl font-black text-ember">42</span>
+            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider">Movies Watched</span>
           </div>
 
-          <div className="bg-[#1C1C1C] border border-[#2A2A2A] rounded-xl p-3.5 sm:p-4 text-center flex flex-col items-center gap-1 hover:border-[#FF6B35] transition-colors">
-            <span className="text-xl sm:text-2xl font-extrabold text-[#FF6B35]">18</span>
-            <span className="text-[10px] sm:text-xs font-semibold text-[#A1A1AA] uppercase tracking-wider">
-              In Watchlist
-            </span>
+          <div className="bg-surface border border-border-default rounded-xl p-4 text-center flex flex-col items-center gap-1 hover:border-ember transition-colors">
+            <span className="text-2xl font-black text-ember">18</span>
+            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider">In Watchlist</span>
           </div>
 
-          <div className="bg-[#1C1C1C] border border-[#2A2A2A] rounded-xl p-3.5 sm:p-4 text-center flex flex-col items-center gap-1 hover:border-[#FF6B35] transition-colors">
-            <span className="text-xl sm:text-2xl font-extrabold text-[#FF6B35]">29</span>
-            <span className="text-[10px] sm:text-xs font-semibold text-[#A1A1AA] uppercase tracking-wider">
-              Ratings Given
-            </span>
+          <div className="bg-surface border border-border-default rounded-xl p-4 text-center flex flex-col items-center gap-1 hover:border-ember transition-colors">
+            <span className="text-2xl font-black text-ember">29</span>
+            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider">Ratings Given</span>
+          </div>
+
+          <div className="bg-surface border border-border-default rounded-xl p-4 text-center flex flex-col items-center gap-1 hover:border-ember transition-colors">
+            <span className="text-xl font-black text-ember">Sci-Fi</span>
+            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider">Favorite Genre</span>
           </div>
         </div>
 
         {/* Continue Watching Section */}
-        <section className="mb-7">
+        <section className="mb-8">
           <SectionHeader title="Continue Watching" seeAllLink="/movies" />
-          <div className="flex gap-3.5 overflow-x-auto pb-3 scrollbar-hide">
+          <div className="flex gap-3.5 sm:gap-4 overflow-x-auto pb-3 scrollbar-hide">
             {continueWatchingMovies.map((movie) => (
-              <div key={movie.id} className="shrink-0 w-[140px] sm:w-[160px]">
+              <div key={movie.id} className="shrink-0 w-35 sm:w-40">
                 <MovieCard
                   id={movie.id}
                   image={movie.image}
@@ -82,11 +82,11 @@ function Profile() {
         </section>
 
         {/* My Watchlist Section */}
-        <section className="mb-7">
+        <section className="mb-8">
           <SectionHeader title="My Watchlist" seeAllLink="/watchlist" />
-          <div className="flex gap-3.5 overflow-x-auto pb-3 scrollbar-hide">
+          <div className="flex gap-3.5 sm:gap-4 overflow-x-auto pb-3 scrollbar-hide">
             {watchlistPreview.map((movie) => (
-              <div key={movie.id} className="shrink-0 w-[140px] sm:w-[160px]">
+              <div key={movie.id} className="shrink-0 w-35 sm:w-40">
                 <MovieCard
                   id={movie.id}
                   image={movie.image}
@@ -100,25 +100,27 @@ function Profile() {
           </div>
         </section>
 
-        {/* Account Section */}
-        <section className="bg-[#1C1C1C] border border-[#2A2A2A] rounded-2xl p-4 sm:p-5 mt-7">
-          <h3 className="text-sm sm:text-base font-bold text-white mb-3.5">Account Settings</h3>
+        {/* Account Settings Quick Links */}
+        <section className="bg-surface border border-border-default rounded-2xl p-5 mt-8">
+          <h3 className="text-sm font-bold text-white mb-3.5">Quick Settings &amp; Preferences</h3>
           <div className="flex flex-col gap-2">
             {accountLinks.map((link) => (
               <Link
                 key={link.label}
                 to={link.to}
-                className={`flex items-center justify-between p-3 bg-[#151515] border border-[#222222] rounded-lg text-xs sm:text-sm font-medium transition-all ${
+                className={`flex items-center justify-between p-3.5 rounded-xl text-xs sm:text-sm font-medium transition-all ${
                   link.isLogout
-                    ? "text-[#C1121F] hover:bg-[#C1121F]/10 hover:border-[#C1121F]/30 hover:text-[#C1121F]"
-                    : "text-[#D4D4D8] hover:bg-[#242424] hover:text-white"
+                    ? "bg-charcoal border border-border-subtle text-cherry hover:bg-cherry/15 hover:border-cherry/30"
+                    : "bg-charcoal border border-border-subtle text-zinc-300 hover:bg-elevated hover:text-white"
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <i className={`${link.icon} ${link.isLogout ? "text-[#C1121F]" : "text-[#FF6B35]"} w-4 text-center`}></i>
+                  <span className={`w-4 text-center ${link.isLogout ? "text-cherry" : "text-ember"}`}>
+                    <i className={link.icon}></i>
+                  </span>
                   <span>{link.label}</span>
                 </div>
-                <i className="fa-solid fa-chevron-right text-[10px] text-[#71717A]"></i>
+                <i className="fa-solid fa-chevron-right text-[10px] text-zinc-500"></i>
               </Link>
             ))}
           </div>

@@ -10,21 +10,31 @@ function BottomNav() {
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 h-[62px] bg-[#0D0D0D] border-t border-[#2A2A2A] z-50 flex items-center justify-around px-3 shadow-[0_-4px_20px_rgba(0,0,0,0.6)]" id="bottom-navigation">
+    <nav
+      className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-noir/95 backdrop-blur-xl border-t border-border-default z-50 flex items-center justify-around px-2 shadow-[0_-4px_20px_rgba(0,0,0,0.6)]"
+      id="bottom-navigation"
+      aria-label="Mobile navigation"
+    >
       {navItems.map((item) => (
         <NavLink
           key={item.to}
           to={item.to}
           end={item.end}
           className={({ isActive }) =>
-            `flex flex-col items-center justify-center gap-1 text-[11px] font-semibold transition-all py-1.5 px-3 rounded-lg flex-1 max-w-[80px] ${
-              isActive ? "text-[#FF6B35]" : "text-[#71717A] hover:text-[#D4D4D8]"
+            `flex flex-col items-center justify-center gap-1 py-1.5 px-3 rounded-lg flex-1 max-w-18 text-[10px] font-semibold transition-all ${
+              isActive
+                ? "text-ember"
+                : "text-zinc-500 hover:text-zinc-300"
             }`
           }
         >
           {({ isActive }) => (
             <>
-              <i className={`${item.icon} text-lg transition-transform ${isActive ? "-translate-y-0.5" : ""}`}></i>
+              <i
+                className={`${item.icon} text-lg transition-transform ${
+                  isActive ? "-translate-y-0.5 drop-shadow-[0_0_6px_rgba(255,107,53,0.6)]" : ""
+                }`}
+              ></i>
               <span>{item.label}</span>
             </>
           )}

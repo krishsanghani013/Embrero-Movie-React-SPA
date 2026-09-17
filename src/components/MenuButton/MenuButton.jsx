@@ -12,28 +12,28 @@ function MenuButton({
     <>
       <div className="flex items-center gap-3">
         {icon && (
-          <span className={`w-5 text-center text-sm ${isDestructive ? "text-[#C1121F]" : "text-[#FF6B35]"}`}>
+          <span className={`w-5 text-center text-sm ${isDestructive ? "text-cherry" : "text-ember"}`}>
             <i className={icon}></i>
           </span>
         )}
         <span>{label}</span>
       </div>
 
-      <div className="flex items-center gap-2 text-[#71717A]">
+      <div className="flex items-center gap-2 text-zinc-500">
         {badge && (
-          <span className="text-[11px] px-1.5 py-0.5 bg-[#FF6B35]/15 text-[#FF6B35] rounded-full font-bold">
+          <span className="text-[11px] px-2 py-0.5 bg-ember/15 text-ember rounded-full font-bold">
             {badge}
           </span>
         )}
-        <i className="fa-solid fa-chevron-right text-[11px]"></i>
+        <i className="fa-solid fa-chevron-right text-[11px] transition-transform group-hover:translate-x-1"></i>
       </div>
     </>
   );
 
-  const baseClass = `flex items-center justify-between w-full p-3 rounded-lg text-sm font-medium transition-all ${
+  const baseClass = `group flex items-center justify-between w-full p-3.5 rounded-xl text-sm font-medium transition-all ${
     isDestructive
-      ? "bg-[#1C1C1C] border border-[#222222] text-[#C1121F] hover:bg-[#C1121F]/10 hover:border-[#C1121F]/30"
-      : "bg-[#1C1C1C] border border-[#222222] text-[#F5F5F5] hover:bg-[#242424] hover:border-[#2A2A2A] hover:text-white"
+      ? "bg-surface border border-border-subtle text-cherry hover:bg-cherry/15 hover:border-cherry/30"
+      : "bg-surface border border-border-subtle text-zinc-100 hover:bg-elevated hover:border-border-default hover:text-white hover:translate-x-0.5"
   }`;
 
   if (to) {
