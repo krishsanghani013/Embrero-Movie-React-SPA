@@ -37,15 +37,8 @@ function MovieRow({ title, badge, seeAllLink, movies = [] }) {
               key={movie.id}
               className="shrink-0 w-35 sm:w-41.25 lg:w-46.25 snap-start"
             >
-              <MovieCard
-                id={movie.id}
-                image={movie.image}
-                title={movie.title}
-                genre={movie.genre}
-                rating={movie.rating}
-                year={movie.year}
-                progress={movie.progress}
-              />
+              <MovieCard movie={movie} />
+
             </div>
           ))}
         </div>
